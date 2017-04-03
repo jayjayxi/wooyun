@@ -64,7 +64,7 @@ class ArticlesController extends Controller
         $article->viewnum ++;
         $article->save();
         $article->content = file_get_contents(public_path().'/storage/'.$article->column.'/'.$article->uuid.'.html');
-        $article->content = str_replace("../images/",'http://qiniu.wooyun.lerzen.com/',$article->content);
+        $article->content = str_replace("../images/",'https://qiniu.wooyun.lerzen.com/',$article->content);
         return view('show',compact('article'));
     }
 
