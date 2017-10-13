@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" id="content-wrap">
                 <div class="title text-center">
                     <h3>{{ $article->title }}</h3>
                     <span class="icon-span">
